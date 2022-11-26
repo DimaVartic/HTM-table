@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF8">
+    <title>GOOGLE SEARCH FORM EXAMPLE</title> 
+    <link rel="icon" href="https://icons.iconarchive.com/icons/cornmanthe3rd/metronome/48/Internet-chrome-canary-icon.png">
+</head>
+<body>
+
+    <h1>GOOGLE SEARCH FORM EXAMPLE</h1>
+
+    <img src="https://icons.iconarchive.com/icons/google/chrome/128/Google-Chrome-Chromium-icon.png"/>
+    <!--
+        1.WHERE? -> action="URL"
+        2.WHAT? -> name="???"
+        3.HOW? -> method="GET/POST"
+
+    -->
+    <form action="https://www.google.com/search">
+            <input
+                type="text"
+                size="60"
+                name="q"/>
+
+            <button>GO Google!</button>
+    </form>
+
+        <h2>YANDEX SEARCH FORM EXAMPLE</h2>
+        <img src="https://langalam.com/my_gazi/uploads/2017/11/Yandex-logo-button.png"
+        width="120"/>
+
+    <form action="https://yandex.com/search">
+        <input
+            type="text"
+            size="60"
+            name="text"/>
+
+        <button>GO Yandex!</button>
+    </form>
+
+    <!--
+        HW1: your custom FORM-> Youtube
+    -->
+
+    <h3>YOUTUBE SEARCH FORM EXAMPLE</h3>
+        <img src="https://www.sketchappsources.com/resources/source-image/youtube-logo.png"
+        width="130"/>
+
+    <form action="https://www.youtube.com/results">
+        <input
+            type="text"
+            size="60"
+            name="search_query"/>
+
+        <button>GO Youtube!</button>
+    </form>
+    
+       <!--HM3 use attribute
+                - pattern -> a..z minimum 3 letters-->
+            
+    
+        <h4>GOOGLE FORM EXAMPLE HW3</h4>
+
+        <img src="https://icons.iconarchive.com/icons/google/chrome/128/Google-Chrome-Chromium-icon.png"/>
+       
+        <form action="https://www.google.com/search">
+                <input
+                    type="text"
+                    required
+                    pattern="[A-Za-z]{3,}"
+                    size="60"
+                    name="q"/>
+    
+                <button>GO Search!</button>
+            </form>
+
+             <!--
+            HW2: use <textarea>, <input type="radio"/>
+        -->
+        
+         <h5>ALL SEARCH FORM EXAMPLE HM2</h5>
+
+                <img src="https://icons.iconarchive.com/icons/google/chrome/128/Google-Chrome-Chromium-icon.png"/>
+                <img src="https://langalam.com/my_gazi/uploads/2017/11/Yandex-logo-button.png"
+                width="120"/>
+                <img src="https://www.sketchappsources.com/resources/source-image/youtube-logo.png"
+                width="130"/>
+        
+                <form action="https://www.google.com/search">
+                    <input
+                        type="radio" id="Go on Google"
+                        size="60"
+                        name="q"
+                        value="Go Google"/>
+                        <label for="Go on Goole">Go on Google</label>
+                </form> 
+        
+                <form action="https://yandex.com/search">    
+                    <input
+                        type="radio" id="Go on Yandex"
+                        size="60"
+                        name="text"
+                        value="Go on Yandex"/>
+                        <label for="Go on Yandex">Go on Yandex</label>
+                    </form>
+                 
+                <form action="https://www.youtube.com/results">   
+                    <input
+                        type="radio" id="Go on Youtube"
+                        size="60"
+                        name="search_query"
+                        value="Go on Youtube"/>
+                        <lable for="Go on Youtube">Go on Youtube</lable>
+                </form> 
+                <button>GO Search !</button>
+
+                <!--Incerc sa leg toate elemetele "form" de un singur buton search,
+                    dar idee nu am cum se face asta, si pe net nu gasesc info...
+                    am incercat si cu "select+option
+                    Asta in genere e posibil in HTML?"-->
+           
+
+</body>
+
+</html>
